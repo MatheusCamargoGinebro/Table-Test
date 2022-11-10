@@ -209,7 +209,7 @@ a, button, input{
     transition: all .2s;
 }
 .formulario button:hover{
-    background-color: var(--cor4);
+    background-color: rgb(221, 229, 235);
     color: var(--cor1);
     cursor: pointer;
     scale: 1;
@@ -217,7 +217,7 @@ a, button, input{
 
 
 .formItem{
-    text-align:center;
+    
 
     width: 15rem;
     font-size: 1rem;
@@ -226,11 +226,18 @@ a, button, input{
     background-color: rgb(240, 248, 255);
     border: 1px solid rgb(14, 14, 14);
     border-radius: 4px;
+
+    transition: all .2s;
 }
-.formItem:focus{
-    text-align:left;
+.formItem:hover{
+    background-color: rgb(221, 229, 235);
     padding-left: 10px;
 }
+.formItem:focus{
+    background-color: rgb(221, 229, 235);
+    padding-left: 15px;
+}
+
 
 
 
