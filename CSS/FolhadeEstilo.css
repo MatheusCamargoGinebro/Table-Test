@@ -9,7 +9,7 @@ html{
     --Corsombra: rgba(41, 41, 41, 0.445);
 
     scroll-behavior: smooth;
-    scroll-padding-top: 100px;
+    scroll-padding-top: 5rem;
 }
 *{
     margin: 0;
@@ -41,6 +41,7 @@ a, button, input{
     
     position:sticky;
     top: 0px;
+    width: auto;
     
     margin-bottom: 5rem;
     padding-left: 6rem;
@@ -311,8 +312,8 @@ a, button, input{
     display: flex;
     justify-content:space-around;
 
-    height: 10rem;
-
+    height: fit-content;
+    width: 100vw;
     padding: 1rem;
 
     background-color: var(--cor1);
