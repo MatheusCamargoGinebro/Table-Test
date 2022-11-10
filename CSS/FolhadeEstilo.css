@@ -223,8 +223,8 @@ a, button, input{
     font-size: 1rem;
     padding: 5px;
 
-    background-color: aliceblue;
-    border: 1px solid black;
+    background-color: rgb(240, 248, 255);
+    border: 1px solid rgb(14, 14, 14);
     border-radius: 4px;
 }
 .formItem:focus{
