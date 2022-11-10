@@ -63,17 +63,9 @@ function listar(Genero) {
 
 
 
-
-
-
-
-
-
-
 /*---------------------------- não faz parte da atividade :D ----------------------------*/
 
 function tocar(){
-    //ideiaa foi minmha kkkk
     var audio = document.querySelector('audio');
     audio.play();
 }
