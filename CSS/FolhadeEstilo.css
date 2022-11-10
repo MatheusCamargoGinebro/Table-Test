@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300&family=Roboto&display=swap');
+
+html{
+    --cor1: rgb(3, 15, 27);
+    --cor2: rgb(1, 20, 36);
+    --cor3: rgb(28, 57, 138);
+    --cor4: rgba(244, 255, 248, 1);
+    --cor5: rgb(123, 161, 231);
+    --Corsombra: rgba(41, 41, 41, 0.445);
+
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    user-select: none;
+}
+
+body{
+    background-color: var(--cor5);
+    
+}
+
+a, button, input{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*-------------- ITENS DO CABEÇALHO --------------*/
+.Cabecalho{
+    background-color: var(--cor2) ;
+    border: 1px solid #0a0c0d;
+    box-shadow: 0px 3px 30px 5px var(--Corsombra);
+
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    
+    position:sticky;
+    top: 0px;
+    
+    margin-bottom: 5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    z-index: 2;
+}
+
+
+.Logo{
+    width: 6rem;
+    margin-bottom: -6px;
+}
+
+
+.opcoes{
+    text-decoration:none;
+    color: var(--cor4);
+
+    background: var(--cor3);
+    border: 0px solid #0a0c0d;
+    border-radius: 5px;
+    box-shadow: 0px 3px 30px 5px var(--Corsombra);
+
+    padding: 5px;
+    font-size: 1rem;
+    transition: all 0.15s;
+}
+.opcoes:hover{
+    background-color: var(--cor4);
+    color:var(--cor3);
+    font-size: 1.2rem;
+}
+
+
+.menu{
+    display: inline;
+    margin: 2vw;
+}
+
+
+.Pesquisa{
+    background: rgba(0, 0, 0, 0.637);
+
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0px 3px 30px 5px var(--Corsombra);
+
+    color:aliceblue;
+    
+    padding: 7px;
+}
+
+
+
+
+/*-------------- ITENS DAS DIVs --------------*/
+.divconteudo1{
+    background-color: var(--cor3);
+    width: auto;
+    height: 40rem;
+    margin-right: 0rem;
+    margin-left: 48%;
+    margin-bottom: 5rem;
+
+    
+
+    padding: 3rem;
+    padding-left: 3.5rem;
+
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    box-shadow: 0px 0px 60px 2px var(--Corsombra);
+    
+    display: flex;
+    transition: all 0.25s;
+}
+.divconteudo1:hover{
+    margin-left: 27%;
+}
+
+
+.divconteudo2{
+    background-color: var(--cor3);
+    width: fit-content;
+    min-height: 30rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5rem;
+    
+
+    border-radius: 16px;
+    box-shadow: 0px 0px 60px 2px var(--Corsombra);
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+
+    transition: all 0.25s;
+}
+.divconteudo2:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+
+.Div_inside{
+    
+    background-color: var(--cor4);
+
+    padding: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+
+    width: fit-content;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0px 0px 30px 2px var(--Corsombra);
+}
+
+
+
+
+/*-------------- ITENS DO FORMULÁRIO --------------*/
+.BorderDiv{
+    border: 2px solid var(--cor2);
+    border-radius: 32px;
+    padding: 1rem;
+}
+
+
+.title{
+    background-color: var(--cor4);
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    width: fit-content;
+    position:relative;
+    
+    transform: translate(-50%, -90%);
+    left: 50%;
+    color: var(--cor1);
+    padding: 5px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.formulario button{
+    background-color: var(--cor3);
+    color: var(--cor4);
+
+    border: 1px solid black;
+    border-radius: 4px;
+
+    scale: 0.9;
+    width: 15rem;
+    font-size: 1rem;
+    padding: 5px;
+
+    text-align:center;
+
+    transition: all .2s;
+}
+.formulario button:hover{
+    background-color: var(--cor4);
+    color: var(--cor1);
+    cursor: pointer;
+    scale: 1;
+}
+
+
+.formItem{
+    text-align:center;
+
+    width: 15rem;
+    font-size: 1rem;
+    padding: 5px;
+
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.formItem:focus{
+    text-align:left;
+    padding-left: 10px;
+}
+
+
+
+/*-------------- ITENS DA TABELA --------------*/
+.OptDiv{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 37rem;
+
+    transform: translate(-50%, -110%);
+    left: 50%;
+    
+}
+.OptDiv li{
+    display: inline;
+    justify-content: space-between;
+    margin: 1rem;
+}
+.OptDiv a{
+    background-color: var(--cor3);
+    color: var(--cor4);
+
+    border: 1px solid black;
+    border-radius: 4px;
+
+    padding: 5px;
+    text-align:end;
+
+    transition: all .2s;
+}
+.OptDiv a:hover{
+    background-color: var(--cor4);
+    color: var(--cor1);
+    cursor: pointer;
+}
+
+
+.divTabela{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.table{
+    text-align: center;
+    width: 36rem;
+    
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.table th{
+    width: 20%;
+    border: 2px solid var(--cor1);
+    border-radius: 12px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.table td{
+    padding: 5px;
+    border: 1px solid var(--cor1);
+    border-radius: 12px;
+}
+
+.table a{
+    color:var(--cor5);
+
+    transition: all .1s;
+}
+.table a:hover{
+    color:var(--cor3);
+}
+
+
+/*-------------- ITENS DO RODAPÉ --------------*/
+.rodape{
+    display: flex;
+    justify-content:space-around;
+
+    height: 10rem;
+
+    padding: 1rem;
+
+    background-color: var(--cor1);
+    border: #0a0c0d solid 2px;
+    box-shadow: 0px -5px 50px 5px #404344;
+}
+.rodape p{
+    color: var(--cor4);
+}
+.rodape a{
+    color:var(--cor3);
+
+    transition: all .2s;
+}
+.rodape a:hover{
+    color:var(--cor5);
+}
+
+.rodapediv{
+    display: flex;
+    
+    width: 45%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color:var(--cor4);
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+.menu2{
+    display:flex;
+    margin:.5rem;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>The Ifers</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS/FolhadeEstilo.css">
+
+    <link rel="icon" type="image/x-icon" href="IMGs/TheIfers_logo.png">
+
+    <script src="JS/FolhadeScript.js"></script>
+</head>
+
+<body>
+    <!--< Caabeçalho >-->
+    <div class="Cabecalho">
+        <div>
+            <a href="#"><img src="IMGs/TheIfers_logo.png" class="Logo"></a>
+        </div>
+        <div>
+            <ul>
+                <li class="menu"><a href="#secao1" class="opcoes">Cadastrar</a></li>
+                <li class="menu"><a href="#secao2" class="opcoes">Tabela</a></li>
+            </ul>
+        </div>
+        <input type="text" placeholder="Pesquisar" class="Pesquisa">
+    </div>
+
+
+
+    <!--<Div 1>-->
+    <div class="divconteudo1" id="secao1">
+        <div class="Div_inside">
+
+            <div class="BorderDiv">
+                <div class="title">
+                    <h1> Cadastrar </h1>
+                </div>
+                <div class="formulario">
+                    <label for="NomeJogo"></label>
+                    <input type="text" name="NomeJogo" id="NomeJogo" placeholder="Nome do jogo" class="formItem"/>
+                </div>
+
+                <div class="formulario">
+                    <label for="Produtora"></label>
+                    <input type="text" name="Produtora" id="Produtora" placeholder="Produtora"  class="formItem"/>
+                </div>
+
+                <div class="formulario">
+                    <label for="Personagem"></label>
+                    <input type="text" name="Personagem" id="Personagem" placeholder="Personagem" class="formItem"/>
+                </div>
+
+                <div class="formulario">
+                    <label for="Plataforma"></label>
+                    <input type="text" name="Plataforma" id="Plataforma" placeholder="Plataforma" class="formItem"/>
+                </div>
+
+                <div class="formulario">
+                    <select id="Genero" class="formItem">
+                        <option value="">Gênero</option>
+                        <option value="Ação">Ação</option>
+                        <option value="Aventura">Aventura</option>
+                        <option value="Corrida">Corrida</option>
+                        <option value="Puzzle">Puzzle</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+                <div class="formulario">
+                    <button type="button" onclick="Cadastrar()">Cadastrar</button>
+                    <audio src="IMGs/sound.mp3" id="audio"></audio>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+<a href=""></a>
+    <!--<Div 2>-->
+    <div class="divconteudo2" id="secao2">
+        <div class="Div_inside">
+            <div>
+                <div class="BorderDiv">
+                    <div class="title">
+                        <h1> Tabela </h1>
+                    </div>
+                    <div class="OptDiv">
+                        <ul class="filtro">
+                            <li><a href="#Ação" onclick="listar(this.innerHTML)">Ação</a></li>
+                            <li><a href="#Aventura" onclick="listar(this.innerHTML)">Aventura</a></li>
+                            <li><a href="#Corrida" onclick="listar(this.innerHTML)">Corrida</a></li>
+                            <li><a href="#Puzzle" onclick="listar(this.innerHTML)">Puzzle</a></li>
+                            <li><a href="#Outro" onclick="listar(this.innerHTML)">Outro</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="divTabela">
+                    <div id="tabelaGames">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <!--< Rodapé >-->
+    <div class="rodape">
+        <div class="rodapediv">
+            <ul>
+                <li class="menu2">
+                    <p>Nome do aluno: Matheus Camargo Ginebro CP3016153</p>
+                </li>
+                <li class="menu2">
+                    <p>E-mail escolar do aluno: <a href="mailto:matheus.ginebro@aluno.ifsp.edu.br">matheus.ginebro@aluno.ifsp.edu.br</a></p>
+                </li>
+                <li class="menu2">
+                    <p>E-mail privado do aluno: <a href="mailto:matheuscginrbro@gmail.com">matheuscginrbro@gmail.com</a></p>
+                </li>
+
+            </ul>
+        </div>
+        <div class="rodapediv">
+            <ul>
+                <li class="menu2">
+                    <p>Preset de <a href="https://pt.wikipedia.org/wiki/HTML">HTML</a> e <a href="https://pt.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a>, feito por Matheus Camargo, para adiantar as atividades, e treinar ao mesmo tempo.</p>
+                </li>
+                <li class="menu2">
+                    <p>Escola em que o aluno estuda: <a href="https://portal.cmp.ifsp.edu.br">Instituto federal - Campus Campinas</a>.</p>
+                </li>
+                <li class="menu2">
+                    <p>Música favorita do aluno: <a href="https://www.cifraclub.com.br/legiao-urbana/tempo-perdido/">Tempo Perdido - Legião Urbana</a>.</p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
