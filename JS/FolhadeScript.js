@@ -29,10 +29,27 @@ function Cadastrar() {
     Plataforma.value = "";
 }
 
+function mudarNome(i) {
+	var newName = window.prompt("Digite um novo nome para o jogo.");
+	Games[i].NomeJogo = newName;
+	listar(Games[i].Genero);
+}
+
+function mudarProdutora(i) {
+	var newProducter = window.prompt("Digite uma nova produtora para o jogo.");
+	Games[i].Produtora = newProducter;
+	listar(Games[i].Genero);
+}
+
+function mudarPersonagem(i) {
+	var newCharacter = window.prompt("Digite um novo personagem para o jogo.");
+	Games[i].Personagem = newCharacter;
+	listar(Games[i].Genero);
+}
 
 function mudarPlataforma(i) {
-	var newplat = window.prompt("Digite uma nova plataforma para o jogo.");
-	Games[i].Plataforma = newplat;
+	var newPlat = window.prompt("Digite uma nova plataforma para o jogo.");
+	Games[i].Plataforma = newPlat;
 	listar(Games[i].Genero);
 }
 
@@ -42,16 +59,15 @@ function listar(Genero) {
     var TabelContent = document.getElementById('tabelaGames');
     var Content = "<table class='table'>";
 
-    Content += "<tr><th>Nome do jogo</th><th>Produtora</th><th>Personagem</th><th>Plataforma</th><th>Genero</th><th>Mudar plataforma</th></tr>";
+    Content += "<tr><th>Nome do jogo</th><th>Produtora</th><th>Personagem</th><th>Plataforma</th><th>Genero</th></tr>";
 
     for (i = 0; i < Games.length; i++) {
         if (Games[i].Genero == Genero) {
-            Content += "<tr><td>" + Games[i].NomeJogo + "</td>";
-            Content += "<td>" + Games[i].Produtora + "</td>";
-            Content += "<td>" + Games[i].Personagem + "</td>";
-            Content += "<td>" + Games[i].Plataforma + "</td>";
-            Content += "<td>" + Games[i].Genero + "</td>";
-            Content += "<td><a href='#secao2' onclick='mudarPlataforma("+i+")'>Mudar</a></td></tr>";
+            Content += "<tr><td><a href='#secao2' onclick='mudarNome("+i+")'>" + Games[i].NomeJogo + "</a></td>";
+            Content += "<td><a href='#secao2' onclick='mudarProdutora("+i+")'>" + Games[i].Produtora + "</a></td>";
+            Content += "<td><a href='#secao2' onclick='mudarPersonagem("+i+")'>" + Games[i].Personagem + "</a></td>";
+            Content += "<td><a href='#secao2' onclick='mudarPlataforma("+i+")'>" + Games[i].Plataforma + "</a></td>";
+            Content += "<td>" + Games[i].Genero + "</a></td>";
         }
     }
     Content += "</table>";
