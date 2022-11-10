@@ -67,7 +67,7 @@ function listar(Genero) {
             Content += "<td><a href='#secao2' onclick='mudarProdutora("+i+")'>" + Games[i].Produtora + "</a></td>";
             Content += "<td><a href='#secao2' onclick='mudarPersonagem("+i+")'>" + Games[i].Personagem + "</a></td>";
             Content += "<td><a href='#secao2' onclick='mudarPlataforma("+i+")'>" + Games[i].Plataforma + "</a></td>";
-            Content += "<td>" + Games[i].Genero + "</a></td>";
+            Content += "<td><a href='#secao2'>" + Games[i].Genero + "</a></td>";
         }
     }
     Content += "</table>";

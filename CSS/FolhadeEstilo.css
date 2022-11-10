@@ -21,7 +21,7 @@ html{
 
 body{
     background-color: var(--cor5);
-    
+    overflow-x: hidden;
 }
 
 a, button, input{
@@ -298,11 +298,13 @@ a, button, input{
 }
 
 .table a{
-    color:var(--cor5);
+    font-size: 15px;
+    color:var(--cor2);
 
     transition: all .1s;
 }
 .table a:hover{
+    font-weight: bold;
     color:var(--cor3);
 }
 
