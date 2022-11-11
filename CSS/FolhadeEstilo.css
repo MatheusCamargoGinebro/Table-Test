@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300&family=Roboto&display=swap');
 
 html{
-    --cor1: rgb(3, 15, 27);
-    --cor2: rgb(1, 20, 36);
-    --cor3: rgb(28, 57, 138);
-    --cor4: rgba(244, 255, 248, 1);
-    --cor5: rgb(123, 161, 231);
-    --Corsombra: rgba(41, 41, 41, 0.445);
-
+    --cor1: #010409ff; /*Fundo (background)*/
+    --cor2: #0d1117ff; /*Header/Footer*/
+    --cor3: #161b22ff; /*Divs*/
+    --cor4: #238636ff; /*Botões*/
+    --cor5: #dcdcdcff; /*Letras e bordas*/
+    
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
 }
@@ -20,7 +19,7 @@ html{
 }
 
 body{
-    background-color: var(--cor5);
+    background-color: var(--cor1);
     overflow-x: hidden;
 }
 
@@ -31,9 +30,8 @@ a, button, input{
 
 /*-------------- ITENS DO CABEÇALHO --------------*/
 .Cabecalho{
-    background-color: var(--cor2) ;
+    background-color: var(--cor2);
     border: 1px solid #0a0c0d;
-    box-shadow: 0px 3px 30px 5px var(--Corsombra);
 
     display:flex;
     align-items: center;
@@ -52,27 +50,28 @@ a, button, input{
 
 .Logo{
     width: 6rem;
-    margin-bottom: -6px;
+    margin-bottom: -3px;
+}
+
+.btnDiv{
+    translate: 20%;
 }
 
 
 .opcoes{
     text-decoration:none;
-    color: var(--cor4);
+    color: var(--cor5);
 
-    background: var(--cor3);
-    border: 0px solid #0a0c0d;
+    background: var(--cor4);
     border-radius: 5px;
-    box-shadow: 0px 3px 30px 5px var(--Corsombra);
-
-    padding: 5px;
-    font-size: 1rem;
-    transition: all 0.15s;
+    border: 1px solid var(--cor4);
+    padding: 10px;
+    font-size: .9rem;
+    transition: all 0.2s;
 }
 .opcoes:hover{
-    background-color: var(--cor4);
-    color:var(--cor3);
-    font-size: 1.2rem;
+    background-color: transparent;
+    border: 1px solid var(--cor5);
 }
 
 
@@ -84,14 +83,18 @@ a, button, input{
 
 .Pesquisa{
     background: rgba(0, 0, 0, 0.637);
+    color:var(--cor5);
 
-    border: 1px solid black;
-    border-radius: 8px;
-    box-shadow: 0px 3px 30px 5px var(--Corsombra);
 
-    color:aliceblue;
+    border: none;
+    border-radius: 5px;
     
-    padding: 7px;
+    width: 15rem;
+    padding: 9px;
+    font-family: 'Poppins', sans-serif;
+}
+.Pesquisa::placeholder{
+    color: var(--cor5);
 }
 
 
@@ -99,21 +102,16 @@ a, button, input{
 
 /*-------------- ITENS DAS DIVs --------------*/
 .divconteudo1{
-    background-color: var(--cor3);
-    width: auto;
-    height: 40rem;
-    margin-right: 0rem;
-    margin-left: 48%;
-    margin-bottom: 5rem;
-
+    background-color: var(--cor2);
     
 
+    margin-bottom: 5rem;
+    margin-left: 48%;
     padding: 3rem;
     padding-left: 3.5rem;
 
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
-    box-shadow: 0px 0px 60px 2px var(--Corsombra);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
     
     display: flex;
     transition: all 0.25s;
@@ -124,20 +122,20 @@ a, button, input{
 
 
 .divconteudo2{
-    background-color: var(--cor3);
+    background-color: var(--cor2);
     width: fit-content;
-    min-height: 30rem;
+    min-height: fit-content;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 5rem;
     
 
-    border-radius: 16px;
-    box-shadow: 0px 0px 60px 2px var(--Corsombra);
+    border-radius: 5px;
 
+    padding: 1rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    padding: 3rem;
+    
     display: flex;
     justify-content: center;
 
@@ -150,17 +148,13 @@ a, button, input{
 
 
 .Div_inside{
-    
-    background-color: var(--cor4);
+    background-color: var(--cor2);
 
-    padding: 5rem;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+    padding: .5rem;
 
     width: fit-content;
     height: auto;
-    border-radius: 16px;
-    box-shadow: 0px 0px 30px 2px var(--Corsombra);
+    border-radius: 6px;
 }
 
 
@@ -168,14 +162,16 @@ a, button, input{
 
 /*-------------- ITENS DO FORMULÁRIO --------------*/
 .BorderDiv{
-    border: 2px solid var(--cor2);
+    border: 2px solid var(--cor5);
     border-radius: 32px;
     padding: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 
 .title{
-    background-color: var(--cor4);
+    background-color: var(--cor2);
     font-family: 'Poppins', sans-serif;
     font-size: small;
     width: fit-content;
@@ -183,7 +179,7 @@ a, button, input{
     
     transform: translate(-50%, -90%);
     left: 50%;
-    color: var(--cor1);
+    color: var(--cor5);
     padding: 5px;
 }
 
@@ -193,49 +189,45 @@ a, button, input{
     margin-bottom: 2rem;
 }
 .formulario button{
-    background-color: var(--cor3);
-    color: var(--cor4);
+    background-color: var(--cor4);
+    color: var(--cor5);
 
-    border: 1px solid black;
+    border: 1px solid var(--cor4);
     border-radius: 4px;
 
-    scale: 0.9;
-    width: 15rem;
+    width: 17rem;
     font-size: 1rem;
-    padding: 5px;
+    padding: 10px;
 
     text-align:center;
 
     transition: all .2s;
 }
 .formulario button:hover{
-    background-color: rgb(221, 229, 235);
-    color: var(--cor1);
+    background-color: transparent;
+    border:1px solid var(--cor5);
     cursor: pointer;
-    scale: 1;
 }
 
 
 .formItem{
-    
-
-    width: 15rem;
+    width: 17rem;
     font-size: 1rem;
-    padding: 5px;
+    padding: 10px;
 
-    background-color: rgb(240, 248, 255);
-    border: 1px solid rgb(14, 14, 14);
-    border-radius: 4px;
-
+    background-color: var(--cor5);
+    border: 1px solid var(--cor5);
+    border-radius: 5px;
+    outline: none;
     transition: all .2s;
 }
 .formItem:hover{
-    background-color: rgb(221, 229, 235);
-    padding-left: 10px;
+    padding-left: 15px;
 }
 .formItem:focus{
-    background-color: rgb(221, 229, 235);
-    padding-left: 15px;
+    background-color: var(--cor1);
+    color: var(--cor5);
+    padding-left: 20px;
 }
 
 
@@ -246,73 +238,68 @@ a, button, input{
     position: relative;
     display: flex;
     justify-content: center;
-    width: 37rem;
 
     transform: translate(-50%, -110%);
     left: 50%;
-    
 }
 .OptDiv li{
     display: inline;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 1rem;
 }
 .OptDiv a{
-    background-color: var(--cor3);
-    color: var(--cor4);
+    background-color: var(--cor4);
+    color: var(--cor5);
 
-    border: 1px solid black;
-    border-radius: 4px;
+    border: 1px solid var(--cor4);
+    border-radius: 5px;
 
-    padding: 5px;
-    text-align:end;
+    padding: 10px;
 
     transition: all .2s;
 }
 .OptDiv a:hover{
-    background-color: var(--cor4);
-    color: var(--cor1);
-    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--cor5);
 }
 
 
 .divTabela{
-    margin: 2rem;
     display: flex;
     justify-content: center;
+    font-family: 'roboto', sans-serif;
+    margin-top: 2rem;
+    background-color:var(--cor2);
 }
 
 
 .table{
+    border: 1px solid var(--cor5);
+    color: var(--cor5);
+    font-family: 'roboto', sans-serif;
     text-align: center;
-    width: 36rem;
-    
-    border: 2px solid black;
     border-collapse: collapse;
 }
 .table th{
+    border-bottom: 1px solid var(--cor5);
     width: 20%;
-    border: 2px solid var(--cor1);
-    border-radius: 12px;
-
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .table td{
-    padding: 5px;
-    border: 1px solid var(--cor1);
-    border-radius: 12px;
+    
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .table a{
-    font-size: 15px;
-    color:var(--cor2);
-
+    color: var(--cor5);
     transition: all .1s;
 }
 .table a:hover{
-    font-weight: bold;
-    color:var(--cor3);
+    color:var(--cor4);
 }
 
 
@@ -325,20 +312,18 @@ a, button, input{
     width: 100vw;
     padding: 1rem;
 
-    background-color: var(--cor1);
-    border: #0a0c0d solid 2px;
-    box-shadow: 0px -5px 50px 5px #404344;
+    background-color: var(--cor2);
 }
 .rodape p{
-    color: var(--cor4);
+    color: var(--cor5);
 }
 .rodape a{
-    color:var(--cor3);
-
+    color:var(--cor5);
+    font-weight: 500;
     transition: all .2s;
 }
 .rodape a:hover{
-    color:var(--cor5);
+    color:var(--cor4);
 }
 
 .rodapediv{

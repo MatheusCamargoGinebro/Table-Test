@@ -9,7 +9,7 @@ class Jogo{
 }
 
 var Games = [];
-Games[0] =  new Jogo ("Uncharted", "Naughty Dog", "Nathan Drake.", "Playstation", "Aventura");
+Games[0] =  new Jogo ("Uncharted", "Naughty Dog", "Nathan Drake", "Playstation", "Aventura");
 Games[1] =  new Jogo ("Assassin's Creed", "Ubisoft", "Desmond Miles", "Playstation", "Outro");
 Games[2] =  new Jogo ("Gran Turismo", "Polyphony Digital", "Simulador", "Playstation", "Corrida");
 Games[3] =  new Jogo ("Forza Horizon 5", "Playground Games", "Simulador", "Xbox", "Corrida");
