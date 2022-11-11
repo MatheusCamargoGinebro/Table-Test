@@ -118,17 +118,29 @@ body::-webkit-scrollbar {
     background: rgba(0, 0, 0, 0.637);
     color:var(--cor4);
 
-    border: none;
+    border: 1px solid var(--cor5);
     border-radius: 5px;
-    
+    outline: none;
+
     width: 15rem;
-    padding: 9px;
+    padding: 10px;
+
     font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+
+    transition: all .2s;
+}
+.Pesquisa:hover{
+    padding-left: 15px;
+}
+.Pesquisa:focus{
+    padding-left: 20px;
+    border: 1px solid var(--cor4);
 }
 .Pesquisa::placeholder{
+    opacity: .8;
     color: var(--cor4);
 }
-
 
 
 
