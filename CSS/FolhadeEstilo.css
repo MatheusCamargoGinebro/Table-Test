@@ -51,12 +51,12 @@ body::-webkit-scrollbar {
     width: 8px;
   }
   
-  body::-webkit-scrollbar-track {
+  body::-webkit-scrollbar-track{
     background: var(--cor5);
   }
   
   body::-webkit-scrollbar-thumb{
-    background-color: var(--cor4);
+    background-color: rgb(119, 119, 126);;
     border-radius: 8px;
   }
 
@@ -64,7 +64,7 @@ body::-webkit-scrollbar {
 /*-------------- ITENS DO CABEÇALHO --------------*/
 .Cabecalho{
     background-color: var(--cor2);
-    border: 1px solid #0a0c0d;
+    border: 1px solid var(--cor1);
 
     display:flex;
     align-items: center;
@@ -161,7 +161,7 @@ body::-webkit-scrollbar {
     margin-bottom: 5rem;
     
 
-    border-radius: 5px;
+    border-radius: 32px;
 
     padding: 1rem;
     padding-top: 2rem;
