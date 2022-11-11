@@ -48,7 +48,7 @@ a, button, input{
 }
 
 body::-webkit-scrollbar {
-    width: 8px;
+    width: 3px;
   }
   
   body::-webkit-scrollbar-track{
@@ -57,7 +57,7 @@ body::-webkit-scrollbar {
   
   body::-webkit-scrollbar-thumb{
     background-color: rgb(119, 119, 126);;
-    border-radius: 8px;
+    border-radius: 3px;
   }
 
 
