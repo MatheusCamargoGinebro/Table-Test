@@ -2,10 +2,10 @@
 
 html{
     --cor1: #010409ff; /*Fundo (background)*/
-    --cor2: #0d1117ff; /*Header/Footer*/
-    --cor3: #161b22ff; /*Divs*/
-    --cor4: #238636ff; /*Botões*/
-    --cor5: #dcdcdcff; /*Letras e bordas*/
+    --cor2: #0d1117ff; /*Header/Footer/Divs*/
+    /*--cor3: #161b22ff; //Divs//*/
+    --cor3: #238636ff; /*Botões*/
+    --cor4: #dcdcdcff; /*Letras e bordas*/
     
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
@@ -28,7 +28,7 @@ a, button, input{
     font-family: 'Roboto', sans-serif;
 }
 
-
+/*-------------- BACKGROUND --------------*/
 .backgroundImage{
     position:absolute;
 
@@ -80,18 +80,18 @@ a, button, input{
 
 .opcoes{
     text-decoration:none;
-    color: var(--cor5);
+    color: var(--cor3);
 
-    background: var(--cor4);
+    background: var(--cor3);
     border-radius: 5px;
-    border: 1px solid var(--cor4);
+    border: 1px solid var(--cor3);
     padding: 10px;
     font-size: .9rem;
     transition: all 0.2s;
 }
 .opcoes:hover{
     background-color: transparent;
-    border: 1px solid var(--cor5);
+    border: 1px solid var(--cor3);
 }
 
 
@@ -103,7 +103,7 @@ a, button, input{
 
 .Pesquisa{
     background: rgba(0, 0, 0, 0.637);
-    color:var(--cor5);
+    color:var(--cor3);
 
     border: none;
     border-radius: 5px;
@@ -113,7 +113,7 @@ a, button, input{
     font-family: 'Poppins', sans-serif;
 }
 .Pesquisa::placeholder{
-    color: var(--cor5);
+    color: var(--cor3);
 }
 
 
@@ -180,7 +180,7 @@ a, button, input{
 
 /*-------------- ITENS DO FORMULÁRIO --------------*/
 .BorderDiv{
-    border: 2px solid var(--cor5);
+    border: 2px solid var(--cor3);
     border-radius: 32px;
     padding: 1rem;
     padding-left: 4rem;
@@ -197,7 +197,7 @@ a, button, input{
     
     transform: translate(-50%, -90%);
     left: 50%;
-    color: var(--cor5);
+    color: var(--cor3);
     padding: 5px;
 }
 
@@ -207,10 +207,10 @@ a, button, input{
     margin-bottom: 2rem;
 }
 .formulario button{
-    background-color: var(--cor4);
-    color: var(--cor5);
+    background-color: var(--cor3);
+    color: var(--cor3);
 
-    border: 1px solid var(--cor4);
+    border: 1px solid var(--cor3);
     border-radius: 4px;
 
     width: 17rem;
@@ -223,7 +223,7 @@ a, button, input{
 }
 .formulario button:hover{
     background-color: transparent;
-    border:1px solid var(--cor5);
+    border:1px solid var(--cor3);
     cursor: pointer;
 }
 
@@ -233,8 +233,8 @@ a, button, input{
     font-size: 1rem;
     padding: 10px;
 
-    background-color: var(--cor5);
-    border: 1px solid var(--cor5);
+    background-color: var(--cor3);
+    border: 1px solid var(--cor3);
     border-radius: 5px;
     outline: none;
     transition: all .2s;
@@ -244,7 +244,7 @@ a, button, input{
 }
 .formItem:focus{
     background-color: var(--cor1);
-    color: var(--cor5);
+    color: var(--cor3);
     padding-left: 20px;
 }
 
@@ -266,10 +266,10 @@ a, button, input{
     margin: 1rem;
 }
 .OptDiv a{
-    background-color: var(--cor4);
-    color: var(--cor5);
+    background-color: var(--cor3);
+    color: var(--cor3);
 
-    border: 1px solid var(--cor4);
+    border: 1px solid var(--cor3);
     border-radius: 5px;
 
     padding: 10px;
@@ -278,7 +278,7 @@ a, button, input{
 }
 .OptDiv a:hover{
     background-color: transparent;
-    border: 1px solid var(--cor5);
+    border: 1px solid var(--cor3);
 }
 
 
@@ -296,15 +296,15 @@ a, button, input{
     padding-left: 15px;
     padding-right: 15px;
     
-    color: var(--cor5);
+    color: var(--cor3);
     font-family: 'roboto', sans-serif;
     text-align: center;
 
-    border: 1px solid var(--cor5);
+    border: 1px solid var(--cor3);
     border-collapse: collapse;
 }
 .table th{
-    border-bottom: 1px solid var(--cor5);
+    border-bottom: 1px solid var(--cor3);
     
     padding: 10px;
     padding-left: 15px;
@@ -319,11 +319,11 @@ a, button, input{
 }
 
 .table a{
-    color: var(--cor5);
+    color: var(--cor3);
     transition: all .1s;
 }
 .table a:hover{
-    color:var(--cor4);
+    color:var(--cor3);
 }
 
 
@@ -341,15 +341,15 @@ a, button, input{
     z-index: 2;
 }
 .rodape p{
-    color: var(--cor5);
+    color: var(--cor3);
 }
 .rodape a{
-    color:var(--cor5);
+    color:var(--cor3);
     font-weight: 500;
     transition: all .2s;
 }
 .rodape a:hover{
-    color:var(--cor4);
+    color:var(--cor3);
 }
 
 .rodapediv{
@@ -358,7 +358,7 @@ a, button, input{
     width: 45%;
     margin-left: 1rem;
     margin-right: 1rem;
-    color:var(--cor4);
+    color:var(--cor3);
 
     font-family: 'Open Sans', sans-serif;
 }
