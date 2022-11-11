@@ -292,6 +292,7 @@ a, button, input{
     padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
+    font-size: small;
 }
 
 .table a{
