@@ -71,13 +71,23 @@ function mudarPlataforma(i) {
 	listar(Games[i].Genero);
 }
 
+function mudarGenero(i){
+    var newGen = window.prompt("Digite um novo gênero para o seu jogo.");
+    if(newGen=="Ação" || newGen=="Aventura" || newGen=="Corrida" || newGen=="Puzzle"){
+        Games[i].Genero = newGen;
+    }else{
+        Games[i].Genero = "Outro";
+    }
+	listar(Games[i].Genero);
+}
+
 
 function listar(Genero) {
     var i;
     var TabelContent = document.getElementById('tabelaGames');
     var Content = "<table class='table'>";
 
-    Content += "<tr><th>Nome do jogo</th><th>Produtora</th><th>Personagem</th><th>Plataforma</th><th>Genero</th></tr>";
+    Content += "<tr><th>Nome do jogo</th><th>Produtora</th><th>Personagem</th><th>Plataforma</th><th>Gênero</th></tr>";
 
     for (i = 0; i < Games.length; i++) {
         if (Games[i].Genero == Genero) {
@@ -85,7 +95,7 @@ function listar(Genero) {
             Content += "<td><a href='#secao2' onclick='mudarProdutora("+i+")'>" + Games[i].Produtora + "</a></td>";
             Content += "<td><a href='#secao2' onclick='mudarPersonagem("+i+")'>" + Games[i].Personagem + "</a></td>";
             Content += "<td><a href='#secao2' onclick='mudarPlataforma("+i+")'>" + Games[i].Plataforma + "</a></td>";
-            Content += "<td><a href='#secao2'>" + Games[i].Genero + "</a></td>";
+            Content += "<td><a href='#secao2' onclick='mudarGenero("+i+")'>" + Games[i].Genero + "</a></td>";
         }
     }
     Content += "</table>";
