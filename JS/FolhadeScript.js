@@ -20,9 +20,27 @@ Games[5] = new Jogo ("The Last of Us", "Naughty Dog", "Joel Miller", "Playstatio
 /*------------------------------- FUNÇÕES -------------------------------*/
 function Cadastrar() {
     tocar();
+    if(NomeJogo.value==""){
+        NomeJogo.value = "-";
+    }
+    if(Produtora.value==""){
+        Produtora.value="-";
+    }
+    if( Personagem.value==""){
+        Personagem.value = "-";
+    }
+    if(Plataforma.value==""){
+        Plataforma.value = "-";
+    }
+    if(Genero.value==""){
+        Genero.value = "Outro";
+    }
+
+
     var e = new Jogo(NomeJogo.value, Produtora.value, Personagem.value, Plataforma.value, Genero.value);
     Games.push(e);
     alert("Novo jogo adicionado ao banco de dados!");
+
     NomeJogo.value = "";
     Produtora.value = "";
     Personagem.value = "";
