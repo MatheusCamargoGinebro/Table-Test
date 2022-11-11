@@ -80,7 +80,7 @@ a, button, input{
 
 .opcoes{
     text-decoration:none;
-    color: var(--cor3);
+    color: var(--cor4);
 
     background: var(--cor3);
     border-radius: 5px;
@@ -91,7 +91,7 @@ a, button, input{
 }
 .opcoes:hover{
     background-color: transparent;
-    border: 1px solid var(--cor3);
+    border: 1px solid var(--cor4);
 }
 
 
@@ -103,7 +103,7 @@ a, button, input{
 
 .Pesquisa{
     background: rgba(0, 0, 0, 0.637);
-    color:var(--cor3);
+    color:var(--cor4);
 
     border: none;
     border-radius: 5px;
@@ -113,7 +113,7 @@ a, button, input{
     font-family: 'Poppins', sans-serif;
 }
 .Pesquisa::placeholder{
-    color: var(--cor3);
+    color: var(--cor4);
 }
 
 
@@ -180,7 +180,7 @@ a, button, input{
 
 /*-------------- ITENS DO FORMULÁRIO --------------*/
 .BorderDiv{
-    border: 2px solid var(--cor3);
+    border: 2px solid var(--cor4);
     border-radius: 32px;
     padding: 1rem;
     padding-left: 4rem;
@@ -197,7 +197,7 @@ a, button, input{
     
     transform: translate(-50%, -90%);
     left: 50%;
-    color: var(--cor3);
+    color: var(--cor4);
     padding: 5px;
 }
 
@@ -208,7 +208,7 @@ a, button, input{
 }
 .formulario button{
     background-color: var(--cor3);
-    color: var(--cor3);
+    color: var(--cor4);
 
     border: 1px solid var(--cor3);
     border-radius: 4px;
@@ -223,7 +223,7 @@ a, button, input{
 }
 .formulario button:hover{
     background-color: transparent;
-    border:1px solid var(--cor3);
+    border:1px solid var(--cor4);
     cursor: pointer;
 }
 
@@ -233,8 +233,8 @@ a, button, input{
     font-size: 1rem;
     padding: 10px;
 
-    background-color: var(--cor3);
-    border: 1px solid var(--cor3);
+    background-color: var(--cor4);
+    border: 1px solid var(--cor4);
     border-radius: 5px;
     outline: none;
     transition: all .2s;
@@ -244,7 +244,7 @@ a, button, input{
 }
 .formItem:focus{
     background-color: var(--cor1);
-    color: var(--cor3);
+    color: var(--cor4);
     padding-left: 20px;
 }
 
@@ -267,7 +267,7 @@ a, button, input{
 }
 .OptDiv a{
     background-color: var(--cor3);
-    color: var(--cor3);
+    color: var(--cor4);
 
     border: 1px solid var(--cor3);
     border-radius: 5px;
@@ -278,7 +278,7 @@ a, button, input{
 }
 .OptDiv a:hover{
     background-color: transparent;
-    border: 1px solid var(--cor3);
+    border: 1px solid var(--cor4);
 }
 
 
@@ -296,15 +296,15 @@ a, button, input{
     padding-left: 15px;
     padding-right: 15px;
     
-    color: var(--cor3);
+    color: var(--cor4);
     font-family: 'roboto', sans-serif;
     text-align: center;
 
-    border: 1px solid var(--cor3);
+    border: 1px solid var(--cor4);
     border-collapse: collapse;
 }
 .table th{
-    border-bottom: 1px solid var(--cor3);
+    border-bottom: 1px solid var(--cor4);
     
     padding: 10px;
     padding-left: 15px;
@@ -319,7 +319,7 @@ a, button, input{
 }
 
 .table a{
-    color: var(--cor3);
+    color: var(--cor4);
     transition: all .1s;
 }
 .table a:hover{
@@ -341,10 +341,10 @@ a, button, input{
     z-index: 2;
 }
 .rodape p{
-    color: var(--cor3);
+    color: var(--cor4);
 }
 .rodape a{
-    color:var(--cor3);
+    color:var(--cor4);
     font-weight: 500;
     transition: all .2s;
 }
