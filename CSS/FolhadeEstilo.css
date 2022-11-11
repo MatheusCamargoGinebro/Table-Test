@@ -3,9 +3,9 @@
 html{
     --cor1: #010409ff; /*Fundo (background)*/
     --cor2: #0d1117ff; /*Header/Footer/Divs*/
-    /*--cor3: #161b22ff; //Divs//*/
     --cor3: #238636ff; /*Botões*/
     --cor4: #dcdcdcff; /*Letras e bordas*/
+    --cor5: #161b22ff; /*ScrollBar*/
     
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
@@ -28,7 +28,7 @@ a, button, input{
     font-family: 'Roboto', sans-serif;
 }
 
-/*-------------- BACKGROUND --------------*/
+/*-------------- Background/ScrollBar --------------*/
 .backgroundImage{
     position:absolute;
 
@@ -46,6 +46,19 @@ a, button, input{
     background-image: url(../IMGs/BackgroundImage1.png);
     z-index: -1;
 }
+
+body::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--cor5);
+  }
+  
+  body::-webkit-scrollbar-thumb{
+    background-color: var(--cor4);
+    border-radius: 8px;
+  }
 
 
 /*-------------- ITENS DO CABEÇALHO --------------*/
