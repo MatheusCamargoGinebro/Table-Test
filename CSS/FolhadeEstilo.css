@@ -23,8 +23,28 @@ body{
     overflow-x: hidden;
 }
 
+
 a, button, input{
     font-family: 'Roboto', sans-serif;
+}
+
+
+.backgroundImage{
+    position:absolute;
+
+    width: 500px;
+    height: 500px;
+    
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 26rem;
+    
+    background-size:cover;
+    background-repeat:no-repeat;
+    
+
+    background-image: url(../IMGs/BackgroundImage1.png);
+    z-index: -1;
 }
 
 
@@ -85,7 +105,6 @@ a, button, input{
     background: rgba(0, 0, 0, 0.637);
     color:var(--cor5);
 
-
     border: none;
     border-radius: 5px;
     
@@ -103,7 +122,6 @@ a, button, input{
 /*-------------- ITENS DAS DIVs --------------*/
 .divconteudo1{
     background-color: var(--cor2);
-    
 
     margin-bottom: 5rem;
     margin-left: 48%;
@@ -123,7 +141,7 @@ a, button, input{
 
 .divconteudo2{
     background-color: var(--cor2);
-    width: fit-content;
+    width: 60rem;
     min-height: fit-content;
     margin-right: auto;
     margin-left: auto;
@@ -265,34 +283,39 @@ a, button, input{
 
 
 .divTabela{
-    display: flex;
-    justify-content: center;
-    font-family: 'roboto', sans-serif;
     margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'roboto', sans-serif;
     background-color:var(--cor2);
 }
 
 
 .table{
-    border: 1px solid var(--cor5);
+    width: 45rem;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
     color: var(--cor5);
     font-family: 'roboto', sans-serif;
     text-align: center;
+
+    border: 1px solid var(--cor5);
     border-collapse: collapse;
 }
 .table th{
     border-bottom: 1px solid var(--cor5);
-    width: 20%;
+    
     padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
 }
 .table td{
+    font-size: small;
     
     padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    font-size: small;
 }
 
 .table a{
@@ -314,6 +337,8 @@ a, button, input{
     padding: 1rem;
 
     background-color: var(--cor2);
+
+    z-index: 2;
 }
 .rodape p{
     color: var(--cor5);

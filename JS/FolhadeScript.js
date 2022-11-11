@@ -36,15 +36,16 @@ function Cadastrar() {
         Genero.value = "Outro";
     }
 
-
     var e = new Jogo(NomeJogo.value, Produtora.value, Personagem.value, Plataforma.value, Genero.value);
     Games.push(e);
     alert("Novo jogo adicionado ao banco de dados!");
-
+    
     NomeJogo.value = "";
     Produtora.value = "";
     Personagem.value = "";
     Plataforma.value = "";
+    listar(Genero.value);
+    Genero.value = "";
 }
 
 function mudarNome(i) {
